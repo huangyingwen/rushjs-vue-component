@@ -1,0 +1,9 @@
+{
+  "templates": [
+    {
+      "displayName": "vue-component",
+      "templateFolder": "vue-component" // relative to template.json
+    }
+  ],
+  "globalPluginEntryPoint": "_globalPlugin/index.ts" // a global plugin
+}

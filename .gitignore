@@ -72,3 +72,4 @@ common/autoinstallers/*/.npmrc
 # Heft temporary files
 .heft
 storybook-static
+dist

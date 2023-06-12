@@ -1,11 +1,10 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label1 }}</button>
+  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
 </template>
 
 <script lang="ts" setup>
 import './button.css';
 import { computed } from 'vue';
-import capitalize from 'lodash-es/capitalize';
 
 const props = withDefaults(
   defineProps<{
@@ -43,8 +42,6 @@ const classes = computed(() => ({
 const style = computed(() => ({
   backgroundColor: props.backgroundColor
 }));
-
-const label1 = computed(() => capitalize(props.label));
 
 const onClick = () => {
   emit('click', 1);
