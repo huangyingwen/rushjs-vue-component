@@ -1,36 +1,49 @@
-<script lang="ts" setup>
-defineProps<{ type: String }>();
-</script>
 <template>
-  <button class="cssc-button" :class="[type]"><slot></slot></button>
+  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
 </template>
-<style scoped>
-.cssc-button {
-  padding: 10px 20px;
-  cursor: pointer;
-}
-.primary {
-  background: #29d;
-  color: #fff;
-  border: 1px solid #4b90d5;
-  border-radius: 2px;
-}
-.success {
-  background: rgb(34, 221, 43);
-  color: #ffffff;
-  border: 1px solid #4bd589;
-  border-radius: 2px;
-}
-.warning {
-  background: rgb(221, 171, 34);
-  color: #fff;
-  border: 1px solid #d5b04b;
-  border-radius: 2px;
-}
-.danger {
-  background: rgb(221, 56, 34);
-  color: #fff;
-  border: 1px solid #d55b4b;
-  border-radius: 2px;
-}
-</style>
+
+<script lang="ts" setup>
+import './button.css';
+import { computed } from 'vue';
+
+const props = withDefaults(
+  defineProps<{
+    /**
+     * The label of the button
+     */
+    label: string;
+    /**
+     * primary or secondary button
+     */
+    primary?: boolean;
+    /**
+     * size of the button
+     */
+    size?: 'small' | 'medium' | 'large';
+    /**
+     * background color of the button
+     */
+    backgroundColor?: string;
+  }>(),
+  { primary: false }
+);
+
+const emit = defineEmits<{
+  (e: 'click', id: number): void;
+}>();
+
+const classes = computed(() => ({
+  'storybook-button': true,
+  'storybook-button--primary': props.primary,
+  'storybook-button--secondary': !props.primary,
+  [`storybook-button--${props.size || 'medium'}`]: true
+}));
+
+const style = computed(() => ({
+  backgroundColor: props.backgroundColor
+}));
+
+const onClick = () => {
+  emit('click', 1);
+};
+</script>

@@ -24,7 +24,7 @@
     },
     {
       "name": "@storybook/vue3",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "component", "tool" ]
     },
     {
       "name": "@storybook/vue3-vite",
@@ -41,6 +41,14 @@
     {
       "name": "@vue/runtime-core",
       "allowedCategories": [ "component" ]
+    },
+    {
+      "name": "fs-extra",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "glob",
+      "allowedCategories": [ "tool" ]
     },
     {
       "name": "react",
