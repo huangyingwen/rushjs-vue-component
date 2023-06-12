@@ -143,7 +143,7 @@
       // "tools",      // non-shipping projects that are part of the developer toolchain
       // "prototypes"  // experiments that should mostly be ignored by the review process
       "component",
-      "tools"
+      "tool"
     ]
     //
     //   /**
@@ -430,6 +430,12 @@
       "projectFolder": "components/Button",
       "reviewCategory": "component",
       "tags": ["component"]
+    },
+    {
+      "packageName": "@cssc-ment/storybook",
+      "projectFolder": "tools/storybook",
+      "reviewCategory": "tool",
+      "tags": ["tool"]
     }
   ]
 }

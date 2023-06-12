@@ -185,6 +185,13 @@
 
       // 它将会唤起 common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
       "shellCommand": "pretty-quick --staged"
+    },
+    {
+      "commandKind": "bulk",
+      "name": "storybook",
+      "summary": "Imports translated strings into each project.",
+      "description": "Requests translated strings from the translation service and imports them into each project.",
+      "enableParallelism": true
     }
   ],
 

@@ -3,20 +3,60 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@storybook/addon-essentials",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@storybook/addon-interactions",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@storybook/addon-links",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@storybook/blocks",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@storybook/testing-library",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@storybook/vue3",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@storybook/vue3-vite",
+      "allowedCategories": [ "tool" ]
+    },
+    {
       "name": "@types/node",
       "allowedCategories": [ "component" ]
     },
     {
       "name": "@vitejs/plugin-vue",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "tool" ]
     },
     {
       "name": "@vue/runtime-core",
       "allowedCategories": [ "component" ]
     },
     {
+      "name": "react",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "storybook",
+      "allowedCategories": [ "tool" ]
+    },
+    {
       "name": "typescript",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "tool" ]
     },
     {
       "name": "unplugin-vue-define-options",
@@ -24,7 +64,7 @@
     },
     {
       "name": "vite",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "tool" ]
     },
     {
       "name": "vite-plugin-dts",
@@ -32,11 +72,11 @@
     },
     {
       "name": "vue",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "tool" ]
     },
     {
       "name": "vue-tsc",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "tool" ]
     }
   ]
 }
