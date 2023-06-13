@@ -192,7 +192,7 @@
       "summary": "组件开发文档.",
       "autoinstallerName": "rush-storybook",
       // "shellCommand": "storybook dev -p 6006"
-      // "shellCommand": "cd common/autoinstallers/rush-storybook && storybook dev -p 6006 -c common/autoinstallers/rush-storybook/.storybook"
+      // "shellCommand": "cd common/autoinstallers/rush-storybook && rush-pnpm run storybook"
       "shellCommand": "node common/scripts/storybook.js"
     }
   ],
