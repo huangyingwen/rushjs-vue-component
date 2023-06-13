@@ -430,12 +430,6 @@
       "projectFolder": "components/Button",
       "reviewCategory": "component",
       "tags": ["component"]
-    },
-    {
-      "packageName": "@cssc-ment/storybook",
-      "projectFolder": "tools/storybook",
-      "reviewCategory": "tool",
-      "tags": ["tool"]
     }
   ]
 }

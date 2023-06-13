@@ -187,11 +187,13 @@
       "shellCommand": "pretty-quick --staged"
     },
     {
-      "commandKind": "bulk",
+      "commandKind": "global",
       "name": "storybook",
-      "summary": "Imports translated strings into each project.",
-      "description": "Requests translated strings from the translation service and imports them into each project.",
-      "enableParallelism": true
+      "summary": "组件开发文档.",
+      "autoinstallerName": "rush-storybook",
+      // "shellCommand": "storybook dev -p 6006"
+      // "shellCommand": "cd common/autoinstallers/rush-storybook && storybook dev -p 6006 -c common/autoinstallers/rush-storybook/.storybook"
+      "shellCommand": "node common/scripts/storybook.js"
     }
   ],
 
