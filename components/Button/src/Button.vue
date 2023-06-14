@@ -3,12 +3,12 @@
 </template>
 
 <script lang="ts" setup>
-import './button.css';
+import './button.less';
 import {computed} from 'vue';
 import capitalize from 'lodash-es/capitalize';
 
 defineOptions({
-  name: 'Button',
+  name: 'cssc-button',
 });
 
 const props = withDefaults(

@@ -4,15 +4,15 @@
   "packages": [
     {
       "name": "@cssc-ment/configs",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "@cssc-ment/eslint-config",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "@rushstack/eslint-patch",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "@storybook/addon-essentials",
@@ -36,7 +36,7 @@
     },
     {
       "name": "@storybook/vue3",
-      "allowedCategories": [ "component", "tool" ]
+      "allowedCategories": [ "component", "components", "tool" ]
     },
     {
       "name": "@storybook/vue3-vite",
@@ -44,23 +44,23 @@
     },
     {
       "name": "@types/lodash-es",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "@types/node",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "@typescript-eslint/parser",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "@vitejs/plugin-vue",
-      "allowedCategories": [ "component", "tool" ]
+      "allowedCategories": [ "component", "components", "tool" ]
     },
     {
       "name": "@vue/runtime-core",
@@ -68,19 +68,19 @@
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "eslint-config-prettier",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "eslint-plugin-prettier",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "eslint-plugin-vue",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "fs-extra",
@@ -91,12 +91,20 @@
       "allowedCategories": [ "tool" ]
     },
     {
+      "name": "less",
+      "allowedCategories": [ "components" ]
+    },
+    {
       "name": "lodash-es",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
+    },
+    {
+      "name": "postcss-html",
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "prettier",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "react",
@@ -112,43 +120,51 @@
     },
     {
       "name": "stylelint",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
+    },
+    {
+      "name": "stylelint-config-html",
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "stylelint-config-prettier",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
+    },
+    {
+      "name": "stylelint-config-recommended-vue",
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "stylelint-config-standard",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "stylelint-order",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tool", "tools" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "component", "tool" ]
+      "allowedCategories": [ "component", "components", "tool", "tools" ]
     },
     {
       "name": "unplugin-vue-define-options",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "vite",
-      "allowedCategories": [ "component", "tool" ]
+      "allowedCategories": [ "component", "components", "tool" ]
     },
     {
       "name": "vite-plugin-dts",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "component", "components" ]
     },
     {
       "name": "vue",
-      "allowedCategories": [ "component", "tool" ]
+      "allowedCategories": [ "component", "components", "tool" ]
     },
     {
       "name": "vue-tsc",
-      "allowedCategories": [ "component", "tool" ]
+      "allowedCategories": [ "component", "components", "tool" ]
     }
   ]
 }

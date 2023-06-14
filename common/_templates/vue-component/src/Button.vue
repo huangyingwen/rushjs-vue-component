@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import './button.css';
+import './button.less';
 import {computed} from 'vue';
 
 defineOptions({
