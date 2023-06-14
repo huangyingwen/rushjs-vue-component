@@ -142,8 +142,8 @@
       // "production", // projects that ship to production
       // "tools",      // non-shipping projects that are part of the developer toolchain
       // "prototypes"  // experiments that should mostly be ignored by the review process
-      "component",
-      "tool"
+      "components",
+      "tools"
     ]
     //
     //   /**
@@ -428,8 +428,22 @@
     {
       "packageName": "@cssc-ment/button",
       "projectFolder": "components/Button",
-      "reviewCategory": "component",
-      "tags": ["component"]
+      "reviewCategory": "components",
+      "tags": ["components"]
+    },
+    {
+      "packageName": "@cssc-ment/configs",
+      "projectFolder": "tools/configs",
+      "shouldPublish": false,
+      "reviewCategory": "tools",
+      "tags": ["tools"]
+    },
+    {
+      "packageName": "@cssc-ment/eslint-config",
+      "projectFolder": "tools/eslint-config",
+      "shouldPublish": false,
+      "reviewCategory": "tools",
+      "tags": ["tools"]
     }
   ]
 }

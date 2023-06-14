@@ -3,6 +3,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
   "packages": [
     {
+      "name": "@cssc-ment/configs",
+      "allowedCategories": [ "component" ]
+    },
+    {
+      "name": "@cssc-ment/eslint-config",
+      "allowedCategories": [ "component" ]
+    },
+    {
+      "name": "@rushstack/eslint-patch",
+      "allowedCategories": [ "component" ]
+    },
+    {
       "name": "@storybook/addon-essentials",
       "allowedCategories": [ "tool" ]
     },
@@ -39,12 +51,36 @@
       "allowedCategories": [ "component" ]
     },
     {
+      "name": "@typescript-eslint/eslint-plugin",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "allowedCategories": [ "tool" ]
+    },
+    {
       "name": "@vitejs/plugin-vue",
       "allowedCategories": [ "component", "tool" ]
     },
     {
       "name": "@vue/runtime-core",
       "allowedCategories": [ "component" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "eslint-config-prettier",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "eslint-plugin-prettier",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "eslint-plugin-vue",
+      "allowedCategories": [ "tool" ]
     },
     {
       "name": "fs-extra",
@@ -59,6 +95,10 @@
       "allowedCategories": [ "component" ]
     },
     {
+      "name": "prettier",
+      "allowedCategories": [ "tool" ]
+    },
+    {
       "name": "react",
       "allowedCategories": [ "tool" ]
     },
@@ -68,6 +108,22 @@
     },
     {
       "name": "storybook",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "stylelint",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "stylelint-config-prettier",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "stylelint-config-standard",
+      "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "stylelint-order",
       "allowedCategories": [ "tool" ]
     },
     {
