@@ -176,17 +176,6 @@
     //   // "autoinstallerName": "my-task"
     // }
     {
-      "name": "prettier",
-      "commandKind": "global",
-      "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
-      "safeForSimultaneousRushProcesses": true,
-
-      "autoinstallerName": "rush-prettier",
-
-      // 它将会唤起 common/autoinstallers/rush-prettier/node_modules/.bin/pretty-quick
-      "shellCommand": "pretty-quick --staged"
-    },
-    {
       "commandKind": "global",
       "name": "storybook",
       "summary": "组件开发文档.",
