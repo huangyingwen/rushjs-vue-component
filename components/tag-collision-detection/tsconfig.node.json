@@ -1,0 +1,4 @@
+{
+  "extends": "@cssc-ment/configs/tsconfig.node",
+  "include": ["vite.config.ts"]
+}

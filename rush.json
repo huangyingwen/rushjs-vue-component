@@ -444,6 +444,15 @@
       "shouldPublish": false,
       "reviewCategory": "tools",
       "tags": ["tools"]
+    },
+    {
+      "packageName": "@cssc-ment/tag-collision-detection",
+      "projectFolder": "components/tag-collision-detection",
+      "reviewCategory": "components",
+      "shouldPublish": true,
+      "tags": [
+        "components"
+      ]
     }
   ]
 }
