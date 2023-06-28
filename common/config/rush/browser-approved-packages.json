@@ -43,6 +43,10 @@
       "allowedCategories": [ "tool" ]
     },
     {
+      "name": "@types/leaflet",
+      "allowedCategories": [ "components" ]
+    },
+    {
       "name": "@types/lodash-es",
       "allowedCategories": [ "component", "components" ]
     },
@@ -89,6 +93,10 @@
     {
       "name": "glob",
       "allowedCategories": [ "tool" ]
+    },
+    {
+      "name": "leaflet",
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "less",
@@ -161,6 +169,10 @@
     {
       "name": "vue",
       "allowedCategories": [ "component", "components", "tool" ]
+    },
+    {
+      "name": "vue-eslint-parser",
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "vue-tsc",
