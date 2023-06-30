@@ -1,6 +1,6 @@
 {
   "name": "@cssc-ment/eslint-config",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "main": "index.cjs",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@cssc-ment/configs",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "files": [
     "*.cjs"
