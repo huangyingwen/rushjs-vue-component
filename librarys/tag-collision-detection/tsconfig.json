@@ -1,5 +1,5 @@
 {
   "extends": "@cssc-ment/configs/tsconfig",
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "stories/**/*.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "stories/**/*.ts"],
   "references": [{"path": "./tsconfig.node.json"}]
 }
