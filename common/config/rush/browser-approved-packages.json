@@ -51,7 +51,23 @@
       "allowedCategories": [ "tools" ]
     },
     {
+      "name": "eslint-config-standard",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "eslint-plugin-import",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "eslint-plugin-n",
+      "allowedCategories": [ "tools" ]
+    },
+    {
       "name": "eslint-plugin-prettier",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "eslint-plugin-promise",
       "allowedCategories": [ "tools" ]
     },
     {
@@ -88,6 +104,10 @@
     },
     {
       "name": "stylelint-config-prettier",
+      "allowedCategories": [ "tools" ]
+    },
+    {
+      "name": "stylelint-config-recess-order",
       "allowedCategories": [ "tools" ]
     },
     {

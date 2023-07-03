@@ -6,7 +6,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    'eslint:recommended',
+    'standard',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     // 需要放在最后才能覆盖和 prettier 冲突的规则
