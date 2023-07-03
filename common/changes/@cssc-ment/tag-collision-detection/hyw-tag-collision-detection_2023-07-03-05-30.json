@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@cssc-ment/tag-collision-detection",
+      "comment": "碰撞检测",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@cssc-ment/tag-collision-detection"
+}
