@@ -4,43 +4,19 @@
   "packages": [
     {
       "name": "@cssc-ment/configs",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "@cssc-ment/eslint-config",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "@rushstack/eslint-patch",
-      "allowedCategories": [ "component", "components" ]
-    },
-    {
-      "name": "@storybook/addon-essentials",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "@storybook/addon-interactions",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "@storybook/addon-links",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "@storybook/blocks",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "@storybook/testing-library",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "@storybook/vue3",
-      "allowedCategories": [ "component", "components", "tool" ]
-    },
-    {
-      "name": "@storybook/vue3-vite",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "@types/leaflet",
@@ -48,51 +24,39 @@
     },
     {
       "name": "@types/lodash-es",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "@types/node",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "@typescript-eslint/parser",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "@vitejs/plugin-vue",
-      "allowedCategories": [ "component", "components", "tool" ]
-    },
-    {
-      "name": "@vue/runtime-core",
-      "allowedCategories": [ "component" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "eslint-config-prettier",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "eslint-plugin-prettier",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "eslint-plugin-vue",
-      "allowedCategories": [ "tool", "tools" ]
-    },
-    {
-      "name": "fs-extra",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "glob",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "leaflet",
@@ -104,7 +68,7 @@
     },
     {
       "name": "lodash-es",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "postcss-html",
@@ -112,23 +76,11 @@
     },
     {
       "name": "prettier",
-      "allowedCategories": [ "tool", "tools" ]
-    },
-    {
-      "name": "react",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "react-dom",
-      "allowedCategories": [ "tool" ]
-    },
-    {
-      "name": "storybook",
-      "allowedCategories": [ "tool" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "stylelint",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "stylelint-config-html",
@@ -136,7 +88,7 @@
     },
     {
       "name": "stylelint-config-prettier",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "stylelint-config-recommended-vue",
@@ -144,31 +96,31 @@
     },
     {
       "name": "stylelint-config-standard",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "stylelint-order",
-      "allowedCategories": [ "tool", "tools" ]
+      "allowedCategories": [ "tools" ]
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "component", "components", "tool", "tools" ]
+      "allowedCategories": [ "components", "tools" ]
     },
     {
       "name": "unplugin-vue-define-options",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "vite",
-      "allowedCategories": [ "component", "components", "tool" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "vite-plugin-dts",
-      "allowedCategories": [ "component", "components" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "vue",
-      "allowedCategories": [ "component", "components", "tool" ]
+      "allowedCategories": [ "components" ]
     },
     {
       "name": "vue-eslint-parser",
@@ -176,7 +128,7 @@
     },
     {
       "name": "vue-tsc",
-      "allowedCategories": [ "component", "components", "tool" ]
+      "allowedCategories": [ "components" ]
     }
   ]
 }
