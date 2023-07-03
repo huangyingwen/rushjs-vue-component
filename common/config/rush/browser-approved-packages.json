@@ -4,15 +4,15 @@
   "packages": [
     {
       "name": "@cssc-ment/configs",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "@cssc-ment/eslint-config",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "@rushstack/eslint-patch",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "@storybook/vue3",
@@ -20,7 +20,7 @@
     },
     {
       "name": "@types/leaflet",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "@types/lodash-es",
@@ -28,7 +28,7 @@
     },
     {
       "name": "@types/node",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
@@ -76,7 +76,7 @@
     },
     {
       "name": "leaflet",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "less",
@@ -124,19 +124,19 @@
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "components", "tools" ]
+      "allowedCategories": [ "components", "librarys", "tools" ]
     },
     {
       "name": "unplugin-vue-define-options",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "vite",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "vite-plugin-dts",
-      "allowedCategories": [ "components" ]
+      "allowedCategories": [ "components", "librarys" ]
     },
     {
       "name": "vue",

@@ -36,6 +36,7 @@ type Rect = {
 type MarkerTag = Pick<Rect, 'lng' | 'lat' | 'mmsi'> & { name: string };
 
 export default class TagCollisionDetection {
+  // eslint-disable-next-line
   constructor(
     private map: Map,
     private layer: FeatureGroup,
@@ -50,13 +51,13 @@ export default class TagCollisionDetection {
     if (zoom <= this.maxZoom || !offsetLengthZoomMap[zoom]) return [];
 
     // 根据地图缩放比例计算偏移长度
-    const offset = Math.pow(offsetLengthZoomMap[zoom], 2) / 10000; //Math.pow(19-zoom+1,2)/10000 0.00045
+    const offset = Math.pow(offsetLengthZoomMap[zoom], 2) / 10000; // Math.pow(19-zoom+1,2)/10000 0.00045
     // 获取向左上角偏移量
     const [offsetLngL, offsetLatL] = this.getLAIAngle('negative', offset);
 
     const renderTags: Rect[] = [];
     for (const tag of tags) {
-      //声明 将要渲染的数据对象
+      // 声明 将要渲染的数据对象
       const newTagTarget = { ...tag };
       // 设置偏移右上角经纬度
       newTagTarget.lng = tag.lng - offsetLngL;
@@ -65,7 +66,7 @@ export default class TagCollisionDetection {
       // 宽度算上 padding,border
       const nameWidth = this.getLengthPx(tag.name, 15.636) + 10 + 2;
 
-      //获取无碰撞旋转后的角度点位
+      // 获取无碰撞旋转后的角度点位
       const renderTag = this.getAngleType(newTagTarget, renderTags, nameWidth);
 
       // 不需要渲染
@@ -76,6 +77,7 @@ export default class TagCollisionDetection {
 
     return renderTags;
   };
+
   /**
    * 获取角度（决定是否旋转，以及旋转多少）
    * @param { Objcet } tag
@@ -83,7 +85,7 @@ export default class TagCollisionDetection {
    * @returns
    */
   private getAngleType = (tag: Omit<MarkerTag, 'name'>, renderTags: Rect[], nameWidth: number) => {
-    //经纬度 转 平面坐标 X = Lng , y = Lat
+    // 经纬度 转 平面坐标 X = Lng , y = Lat
     const { x, y } = this.map.latLngToContainerPoint(tag);
 
     const width = nameWidth; // 宽度随字符长度变化
@@ -106,9 +108,9 @@ export default class TagCollisionDetection {
         if (!this.handleEgdeCollisions(rect1, renderTag)) return true;
 
         // 旋转角度
-        const [spinX, spinY] = this.getOffsetLAI(rect1, j as any);
-        rect1.left = spinX; //- width
-        rect1.top = spinY; //- height
+        const [spinX, spinY] = this.getOffsetLAI(rect1, j as 0 | 1 | 2 | 3);
+        rect1.left = spinX; // - width
+        rect1.top = spinY; // - height
         return false;
       });
 
@@ -128,7 +130,7 @@ export default class TagCollisionDetection {
    * @returns Boolean
    */
   private handleEgdeCollisions = (rect1: Rect, rect2: Rect) => {
-    //console.log(rect1,rect2)
+    // console.log(rect1,rect2)
     return (
       rect1.left < rect2.left + rect2.width &&
       rect1.left + rect1.width > rect2.left &&

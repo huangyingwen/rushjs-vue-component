@@ -449,12 +449,10 @@
     },
     {
       "packageName": "@cssc-ment/tag-collision-detection",
-      "projectFolder": "components/tag-collision-detection",
-      "reviewCategory": "components",
+      "projectFolder": "librarys/tag-collision-detection",
+      "reviewCategory": "librarys",
       "shouldPublish": true,
-      "tags": [
-        "components"
-      ]
+      "tags": ["librarys"]
     }
   ]
 }
