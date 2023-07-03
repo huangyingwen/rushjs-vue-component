@@ -1,7 +1,7 @@
 import type {
   IPlugin,
   IHooks,
-  IPromptsHookParams
+  IPromptsHookParams,
 } from '../../autoinstallers/rush-plugins/node_modules/rush-init-project-plugin/lib';
 
 import _ from '../../autoinstallers/rush-plugins/node_modules/lodash/lodash';
@@ -12,7 +12,12 @@ export class InitPlugin implements IPlugin {
     hooks.promptQuestion.for('projectFolder').tap(InitPlugin.pluginName, (promptQuestion, answersSoFar) => {
       // logic here
       // 必须赋值并且返回 null 才会忽略该提示问题
-      answersSoFar.projectFolder = `components/${_.capitalize(answersSoFar.packageName)}`;
+      switch (answersSoFar.template) {
+        case 'vue-component':
+          answersSoFar.projectFolder = `components/${_.kebabCase(answersSoFar.packageName)}`;
+        case 'library':
+          answersSoFar.projectFolder = `librarys/${answersSoFar.packageName}`;
+      }
       return null;
     });
 
@@ -31,8 +36,13 @@ export class InitPlugin implements IPlugin {
       prompts.promptQueue[2].message = '输入 package 描述信息';
     });
 
-    hooks.answers.tap(InitPlugin.pluginName, (answers) => {
-      answers.packageName = `@cssc-ment/${_.kebabCase(answers.packageName)}`;
+    hooks.answers.tap(InitPlugin.pluginName, answers => {
+      switch (answers.template) {
+        case 'vue-component':
+          answers.packageName = `@cssc-ment/${_.kebabCase(answers.packageName)}`;
+        case 'library':
+          answers.packageName = `@cssc-ment/${answers.packageName}`;
+      }
       answers.packageType = 'module';
     });
   }
